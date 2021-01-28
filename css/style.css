@@ -32,6 +32,7 @@ header nav ul li a {
   font-weight: bold;
   color: var(--style-color);
   line-height: 3rem;
+  transition: all 200ms;
 }
 
 header nav ul li a:hover {
