@@ -20,11 +20,11 @@ function SubmitArea() {
     document.getElementById('area-svar').innerText = CalculateResult(2);
 }
 
-function SubmitVolym() {
-    enhet1 = document.querySelector("#volym-enhet1");
-    enhet2 = document.querySelector("#volym-enhet2");
-    input = document.querySelector("#volym-input").value;
-    document.getElementById('volym-svar').innerText = CalculateResult(3);
+function SubmitVolume() {
+    enhet1 = document.querySelector("#volume-enhet1");
+    enhet2 = document.querySelector("#volume-enhet2");
+    input = document.querySelector("#volume-input").value;
+    document.getElementById('volume-svar').innerText = CalculateResult(3);
 }
 
 function CalculateResult(exponent) {
@@ -48,7 +48,6 @@ function Enhet(enhet, id) {
             } else {
                 koefficient2 = Math.pow(10,-3);
             }
-            
             break;
         case "Centimeter":
             console.log("Centi");

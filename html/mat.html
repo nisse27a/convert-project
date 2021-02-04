@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Conversion project</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/mat.js"></script>
 </head>
+
 <body>
-    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../html/fysik.html">Fysiska enheter</a></li>
+                <li><a href="../html/mat.html">Matredskaps mått</a></li>
+                <li><a href="../html/imper-metri.html">Imperiskt-Metriskt</a></li>
+                <li><a href="../html/pengar.html">SEK-DOLLAR</a></li>
+                <li><a href="../html/religion.html">Kristendom-Islam</a></li>
+            </ul>
+        </nav>
+    </header>
 </body>
+<fieldset>
+    <legend>Bakredskaps mått</legend>
+    <label>Enhet 1:</label>
+    <select class="form-control" id="bak-enhet1">
+        <option>Milliliter</option>
+        <option>Kryddmått</option>
+        <option>Tesked</option>
+        <option>Matsked</option>
+        <option>Kaffemått</option>
+        <option>Deciliter</option>
+    </select>
+    <label>Enhet 2:</label>
+    <select class="form-control" id="bak-enhet2">
+        <option>Milliliter</option>
+        <option>Kryddmått</option>
+        <option>Tesked</option>
+        <option>Matsked</option>
+        <option>Kaffemått</option>
+        <option>Deciliter</option>
+    </select>
+    <br>
+    <input id="bak-input" placeholder="T.ex. 245">
+    <b id="bak-svar"></b>
+    <button type="submit" onclick="SubmitBak()">Konvertera</button>
+</fieldset>
 </html>
