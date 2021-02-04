@@ -13,37 +13,83 @@
     <header>
         <nav>
             <ul>
-                <li><a href="html/fysik.html">Fysiska enheter</a></li>
-                <li><a href="html/mat.html">Matredskaps mått</a></li>
-                <li><a href="html/imper-metri.html">Imperiskt-Metriskt</a></li>
-                <li><a href="html/pengar.html">SEK-DOLLAR</a></li>
-                <li><a href="html/religion.html">Kristendom-Islam</a></li>
+                <li><a href="../html/fysik.html">Fysiska enheter</a></li>
+                <li><a href="../html/mat.html">Matredskaps mått</a></li>
+                <li><a href="../html/imper-metri.html">Imperiskt-Metriskt</a></li>
+                <li><a href="../html/pengar.html">SEK-DOLLAR</a></li>
+                <li><a href="../html/religion.html">Kristendom-Islam</a></li>
             </ul>
         </nav>
     </header>
     <fieldset>
-        <legend>Metriska mått</legend>
+        <legend>Längd mått</legend>
         <label>Enhet 1:</label>
-        <select class="form-control" id="enhet1">
-            <option>Milli</option>
-            <option>Centi</option>
-            <option>Deci</option>
+        <select class="form-control" id="length-enhet1">
+            <option>Millimeter</option>
+            <option>Centimeter</option>
+            <option>Decimeter</option>
             <option>Meter</option>
-            <option>Kilo</option>
+            <option>Kilometer</option>
         </select>
         <label>Enhet 2:</label>
-        <select class="form-control" id="enhet2">
-            <option>Milli</option>
-            <option>Centi</option>
-            <option>Deci</option>
+        <select class="form-control" id="length-enhet2">
+            <option>Millimeter</option>
+            <option>Centimeter</option>
+            <option>Decimeter</option>
             <option>Meter</option>
-            <option>Kilo</option>
+            <option>Kilometer</option>
         </select>
         <br>
-        <input id="input" placeholder="T.ex. 245">
-        <b id="svar"></b>
-        <button type="submit" onclick="Submit()">Konvertera</button>
+        <input id="length-input" placeholder="T.ex. 245">
+        <b id="length-svar"></b>
+        <button type="submit" onclick="SubmitLength()">Konvertera</button>
     </fieldset>
+    <fieldset>
+        <legend>Area mått</legend>
+        <label>Enhet 1:</label>
+        <select class="form-control" id="area-enhet1">
+            <option>Millimeter</option>
+            <option>Centimeter</option>
+            <option>Decimeter</option>
+            <option>Meter</option>
+            <option>Kilometer</option>
+        </select>
+        <label>Enhet 2:</label>
+        <select class="form-control" id="area-enhet2">
+            <option>Millimeter</option>
+            <option>Centimeter</option>
+            <option>Decimeter</option>
+            <option>Meter</option>
+            <option>Kilometer</option>
+        </select>
+        <br>
+        <input id="area-input" placeholder="T.ex. 245">
+        <b id="area-svar"></b>
+        <button type="submit" onclick="SubmitArea()">Konvertera</button>
+    </fieldset>
+        <fieldset>
+            <legend>Volym mått</legend>
+            <label>Enhet 1:</label>
+            <select class="form-control" id="volym-enhet1">
+                <option>Millimeter</option>
+                <option>Centimeter</option>
+                <option>Decimeter</option>
+                <option>Meter</option>
+                <option>Kilometer</option>
+            </select>
+            <label>Enhet 2:</label>
+            <select class="form-control" id="volym-enhet2">
+                <option>Millimeter</option>
+                <option>Centimeter</option>
+                <option>Decimeter</option>
+                <option>Meter</option>
+                <option>Kilometer</option>
+            </select>
+            <br>
+            <input id="volym-input" placeholder="T.ex. 245">
+            <b id="volym-svar"></b>
+            <button type="submit" onclick="SubmitVolym()">Konvertera</button>
+        </fieldset>
 </body>
 
 </html>

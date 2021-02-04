@@ -2,23 +2,47 @@
 
 let enhet1;
 let koefficient1;
-let input;
 let enhet2;
 let koefficient2;
-function Submit() {
-    enhet1 = document.querySelector("#enhet1");
-    enhet2 = document.querySelector("#enhet2");
-    input = document.querySelector("#input").value;
-    Enhet(enhet1,1);
-    Enhet(enhet2,2);
-    document.getElementById('svar').innerText = parseInt(input)*(koefficient1/koefficient2);
-    console.log(parseInt(input)*(koefficient2/koefficient1))
+let input;
+
+function SubmitLength() {
+    enhet1 = document.querySelector("#length-enhet1");
+    enhet2 = document.querySelector("#length-enhet2");
+    input = document.querySelector("#length-input").value;
+    document.getElementById('length-svar').innerText = CalculateResult(1);
 }
 
-function Enhet(input, id) {
-    switch(input.value) {
-        case "Milli":
-            console.log("Milli");
+function SubmitArea() {
+    enhet1 = document.querySelector("#area-enhet1");
+    enhet2 = document.querySelector("#area-enhet2");
+    input = document.querySelector("#area-input").value;
+    document.getElementById('area-svar').innerText = CalculateResult(2);
+}
+
+function SubmitVolym() {
+    enhet1 = document.querySelector("#volym-enhet1");
+    enhet2 = document.querySelector("#volym-enhet2");
+    input = document.querySelector("#volym-input").value;
+    document.getElementById('volym-svar').innerText = CalculateResult(3);
+}
+
+function CalculateResult(exponent) {
+    let decimaler;
+    Enhet(enhet1,1);
+    Enhet(enhet2,2);
+    if(koefficient1>koefficient2) {
+        decimaler = Math.pow(koefficient1/koefficient2, exponent);
+    } else {
+        decimaler = Math.pow(koefficient2/koefficient1,exponent);
+    }
+    return Math.round((parseInt(input)*(Math.pow(koefficient1,exponent)/Math.pow(koefficient2, exponent)))*decimaler)/decimaler;
+}
+
+function Enhet(enhet, id) {
+    switch(enhet.value) {
+        case "Millimeter":
+            console.log("Millimeter");
             if(id==1) {
                 koefficient1 = Math.pow(10,-3);
             } else {
@@ -26,7 +50,7 @@ function Enhet(input, id) {
             }
             
             break;
-        case "Centi":
+        case "Centimeter":
             console.log("Centi");
             if(id==1) {
                 koefficient1 = Math.pow(10,-2);
@@ -34,7 +58,7 @@ function Enhet(input, id) {
                 koefficient2 = Math.pow(10,-2);
             }
             break;
-        case "Deci":
+        case "Decimeter":
             console.log("Deci");
             if(id==1) {
                 koefficient1 = Math.pow(10,-1);
@@ -50,7 +74,7 @@ function Enhet(input, id) {
                 koefficient2 = 1;
             }
             break;
-        case "Kilo":
+        case "Kilometer":
             console.log("Kilo");
             if(id==1) {
                 koefficient1 = Math.pow(10,3);
