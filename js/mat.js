@@ -8,19 +8,6 @@ function SubmitBak() {
     enhet2 = document.querySelector("#bak-enhet2");
     input = document.querySelector("#bak-input").value;
     document.getElementById('bak-svar').innerText = CalculateResult(1);
-    console.log(CalculateResult(1));
-}
-
-function CalculateResult(exponent) {
-    let decimaler;
-    let koefficient1 = Enhet(enhet1);
-    let koefficient2 = Enhet(enhet2);
-    if(koefficient1>koefficient2) {
-        decimaler = Math.pow(koefficient1/koefficient2, exponent);
-    } else {
-        decimaler = Math.pow(koefficient2/koefficient1,exponent);
-    }
-    return Math.round((parseInt(input)*(Math.pow(koefficient1,exponent)/Math.pow(koefficient2, exponent)))*decimaler)/decimaler;
 }
 
 function Enhet(enhet) {

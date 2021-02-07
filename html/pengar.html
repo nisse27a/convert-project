@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversion project</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/main.js"></script>
+    <script defer src="../js/pengar.js"></script>
 </head>
 
 <body>
@@ -15,11 +17,29 @@
                 <li><a href="../html/fysik.html">Fysiska enheter</a></li>
                 <li><a href="../html/mat.html">Matredskaps mått</a></li>
                 <li><a href="../html/imper-metri.html">Imperiskt-Metriskt</a></li>
-                <li><a href="../html/pengar.html">SEK-DOLLAR</a></li>
+                <li><a href="../html/pengar.html">Valuta</a></li>
                 <li><a href="../html/religion.html">Kristendom-Islam</a></li>
             </ul>
         </nav>
     </header>
 </body>
-
+<fieldset>
+    <legend>Pengar</legend>
+    <label>Enhet 1:</label>
+    <select class="form-control" id="valuta1">
+        <option>SEK</option>
+        <option>USD</option>
+        <option>GBP</option>
+    </select>
+    <label>Enhet 2:</label>
+    <select class="form-control" id="valuta2">
+        <option>SEK</option>
+        <option>USD</option>
+        <option>GBP</option>
+    </select>
+    <br>
+    <input id="valuta-input" placeholder="T.ex. 245">
+    <b id="valuta-svar"></b>
+    <button type="submit" onclick="SubmitValuta()">Konvertera</button>
+</fieldset>
 </html>

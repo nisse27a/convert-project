@@ -1,9 +1,7 @@
 "use strict";
 
 let enhet1;
-let koefficient1;
 let enhet2;
-let koefficient2;
 let input;
 
 function SubmitLength() {
@@ -27,60 +25,18 @@ function SubmitVolume() {
     document.getElementById('volume-svar').innerText = CalculateResult(3);
 }
 
-function CalculateResult(exponent) {
-    let decimaler;
-    Enhet(enhet1,1);
-    Enhet(enhet2,2);
-    if(koefficient1>koefficient2) {
-        decimaler = Math.pow(koefficient1/koefficient2, exponent);
-    } else {
-        decimaler = Math.pow(koefficient2/koefficient1,exponent);
-    }
-    return Math.round((parseInt(input)*(Math.pow(koefficient1,exponent)/Math.pow(koefficient2, exponent)))*decimaler)/decimaler;
-}
-
-function Enhet(enhet, id) {
+function Enhet(enhet) {
     switch(enhet.value) {
         case "Millimeter":
-            console.log("Millimeter");
-            if(id==1) {
-                koefficient1 = Math.pow(10,-3);
-            } else {
-                koefficient2 = Math.pow(10,-3);
-            }
-            break;
+            return Math.pow(10,-3);
         case "Centimeter":
-            console.log("Centi");
-            if(id==1) {
-                koefficient1 = Math.pow(10,-2);
-            } else {
-                koefficient2 = Math.pow(10,-2);
-            }
-            break;
+            return Math.pow(10,-2);
         case "Decimeter":
-            console.log("Deci");
-            if(id==1) {
-                koefficient1 = Math.pow(10,-1);
-            } else {
-                koefficient2 = Math.pow(10,-1);
-            }
-            break;
+            return Math.pow(10,-1);
         case "Meter":
-            console.log("Meter");
-            if(id==1) {
-                koefficient1 = 1;
-            } else {
-                koefficient2 = 1;
-            }
-            break;
+            return 1;
         case "Kilometer":
-            console.log("Kilo");
-            if(id==1) {
-                koefficient1 = Math.pow(10,3);
-            } else {
-                koefficient2 = Math.pow(10,3);
-            }
-            break;
+            return Math.pow(10,3);
     }
 }
 

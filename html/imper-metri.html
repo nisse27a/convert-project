@@ -21,5 +21,31 @@
         </nav>
     </header>
 </body>
-
+<fieldset>
+    <legend>Bakredskaps mått</legend>
+    <label>Enhet 1:</label>
+    <select class="form-control" id="imper-enhet1">
+        <option>Centimeter</option>
+        <option>Meter</option>
+        <option>Kilometer</option>
+        <option>Inch</option>
+        <option>Foot</option>
+        <option>Yard</option>
+        <option>Mile</option>
+    </select>
+    <label>Enhet 2:</label>
+    <select class="form-control" id="imper-enhet2">
+        <option>Centimeter</option>
+        <option>Meter</option>
+        <option>Kilometer</option>
+        <option>Inch</option>
+        <option>Foot</option>
+        <option>Yard</option>
+        <option>Mile</option>
+    </select>
+    <br>
+    <input id="imper-input" placeholder="T.ex. 245">
+    <b id="imper-svar"></b>
+    <button type="submit" onclick="SubmitImper()">Konvertera</button>
+</fieldset>
 </html>
