@@ -24,27 +24,43 @@
 </body>
 <fieldset>
     <legend>Bakredskaps mått</legend>
-    <label>Enhet 1:</label>
-    <select class="form-control" id="bak-enhet1">
-        <option>Milliliter</option>
-        <option>Kryddmått</option>
-        <option>Tesked</option>
-        <option>Matsked</option>
-        <option>Kaffemått</option>
-        <option>Deciliter</option>
-    </select>
-    <label>Enhet 2:</label>
-    <select class="form-control" id="bak-enhet2">
-        <option>Milliliter</option>
-        <option>Kryddmått</option>
-        <option>Tesked</option>
-        <option>Matsked</option>
-        <option>Kaffemått</option>
-        <option>Deciliter</option>
-    </select>
-    <br>
-    <input id="bak-input" placeholder="T.ex. 245">
-    <b id="bak-svar"></b>
-    <button type="submit" onclick="SubmitBak()">Konvertera</button>
+    <div class="grid-container">
+        <div class="Enhet1">
+            <label>Enhet 1</label>
+        </div>
+        <div class="Enhet2">
+            <label>Enhet 2</label>
+        </div>
+        <div class="Select1">
+            <select class="form-control" id="bak-enhet1">
+                <option>Milliliter</option>
+                <option>Kryddmått</option>
+                <option>Tesked</option>
+                <option>Matsked</option>
+                <option>Kaffemått</option>
+                <option>Deciliter</option>
+            </select>
+        </div>
+        <div class="Select2">
+            <select class="form-control" id="bak-enhet2">
+                <option>Milliliter</option>
+                <option>Kryddmått</option>
+                <option>Tesked</option>
+                <option>Matsked</option>
+                <option>Kaffemått</option>
+                <option>Deciliter</option>
+            </select>
+        </div>
+        <div class="Convert-button">
+            <button type="submit" onclick="SubmitBak()">Konvertera</button>
+        </div>
+        <div class="Input">
+            <input id="bak-input" placeholder="T.ex. 245">
+        </div>
+        <div class="Result">
+            <b id="bak-svar"></b>
+        </div>
+    </div>
 </fieldset>
+
 </html>

@@ -39,3 +39,43 @@ header nav ul li a:hover {
   background-color: var(--style-color);
   color: var(--theme-color);
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Enhet1 . Enhet2"
+    "Select1 Convert-button Select2"
+    ". Input ."
+    ". Result .";
+}
+
+.Enhet1 {
+  grid-area: Enhet1;
+}
+.Enhet2 {
+  grid-area: Enhet2;
+}
+.Select1 {
+  grid-area: Select1;
+}
+.Select2 {
+  grid-area: Select2;
+}
+.Convert-button {
+  grid-area: Convert-button;
+}
+.Input {
+  grid-area: Input;
+}
+.Result {
+  grid-area: Result;
+}
+fieldset {
+  width: 20vw;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
