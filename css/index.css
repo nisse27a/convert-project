@@ -1,0 +1,31 @@
+:root {
+  --theme-color: darkblue;
+  --style-color: white;
+  --detail: lightblue;
+}
+
+#numbers {
+  background-image: url(../img/numbers.jpg);
+  height: 50vh;
+  width: auto;
+  background-size: cover;
+}
+
+article {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr 5fr 1fr;
+}
+
+article p {
+  grid-column: 2/3;
+}
+
+article p + p {
+}
+
+div + h1 {
+  text-align: center;
+  line-height: 2;
+  color: var(--color5);
+  background-color: var(--detail);
+}

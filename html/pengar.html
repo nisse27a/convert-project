@@ -21,24 +21,39 @@
             </ul>
         </nav>
     </header>
+        <fieldset>
+            <legend>Pengar</legend>
+            <div class="grid-container">
+                <div class="Enhet1">
+                    <label>Från</label>
+                </div>
+                <div class="Enhet2">
+                    <label>Till</label>
+                </div>
+                <div class="Select1">
+                    <select class="form-control" id="valuta1">
+                        <option>SEK</option>
+                        <option>USD</option>
+                        <option>GBP</option>
+                    </select>
+                </div>
+                <div class="Select2">
+                    <select class="form-control" id="valuta2">
+                        <option>SEK</option>
+                        <option>USD</option>
+                        <option>GBP</option>
+                    </select>
+                </div>
+                <div class="Convert-button">
+                    <button type="submit" onclick="SubmitValuta()">Konvertera</button>
+                </div>
+                <div class="Input">
+                    <input id="valuta-input" placeholder="T.ex. 245">
+                </div>
+                <div class="Result">
+                    <b id="valuta-svar"></b>
+                </div>
+            </div>
+        </fieldset>
 </body>
-<fieldset>
-    <legend>Pengar</legend>
-    <label>Enhet 1:</label>
-    <select class="form-control" id="valuta1">
-        <option>SEK</option>
-        <option>USD</option>
-        <option>GBP</option>
-    </select>
-    <label>Enhet 2:</label>
-    <select class="form-control" id="valuta2">
-        <option>SEK</option>
-        <option>USD</option>
-        <option>GBP</option>
-    </select>
-    <br>
-    <input id="valuta-input" placeholder="T.ex. 245">
-    <b id="valuta-svar"></b>
-    <button type="submit" onclick="SubmitValuta()">Konvertera</button>
-</fieldset>
 </html>
