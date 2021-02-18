@@ -1,0 +1,7 @@
+#einstein {
+  background-image: url(../img/einstein.jfif);
+  height: 50vh;
+  width: auto;
+  background-size: cover;
+  display: grid;
+}

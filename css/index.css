@@ -9,6 +9,21 @@
   height: 50vh;
   width: auto;
   background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+#numbers h1 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  text-align: center;
+}
+#numbers h1 b {
+  display: block;
+  line-height: 5rem;
+  font-size: 2rem;
+  border-radius: 10px;
+  background-color: var(--detail);
 }
 
 article {
