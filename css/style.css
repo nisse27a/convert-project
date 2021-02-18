@@ -54,6 +54,18 @@ header nav ul li a:hover {
     ". Result .";
 }
 
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--theme-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--style-color);
+  border-radius: 20px;
+  border: 2px solid var(--theme-color);
+}
+
 .Enhet1 {
   grid-area: Enhet1;
 }
