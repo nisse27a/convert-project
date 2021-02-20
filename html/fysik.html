@@ -24,7 +24,8 @@
     </header>
     <div id="einstein">
     </div>
-    <fieldset>
+    <button class="accordion">Längd</button>
+    <fieldset class="panel">
         <legend>Längd mått</legend>
         <div class="grid-container">
             <div class="Enhet1">
@@ -51,18 +52,19 @@
                     <option>Kilometer</option>
                 </select>
             </div>
-            <div class="Convert-button">
-                <button type="submit" onclick="SubmitLength()">Konvertera</button>
-            </div>
             <div class="Input">
                 <input id="length-input" placeholder="T.ex. 245">
+            </div>
+            <div class="Convert-button">
+                <button type="submit" onclick="SubmitLength()">Konvertera</button>
             </div>
             <div class="Result">
                     <b id="length-svar"></b>
             </div>
         </div>
     </fieldset>
-    <fieldset>
+    <button class="accordion">Area</button>
+    <fieldset class="panel">
         <legend>Area mått</legend>
         <div class="grid-container">
             <div class="Enhet1">
@@ -89,18 +91,19 @@
                     <option>Kilometer</option>
                 </select>
             </div>
-            <div class="Convert-button">
-                <button type="submit" onclick="SubmitArea()">Konvertera</button>
-            </div>
             <div class="Input">
                 <input id="area-input" placeholder="T.ex. 245">
+            </div>
+            <div class="Convert-button">
+                <button type="submit" onclick="SubmitArea()">Konvertera</button>
             </div>
             <div class="Result">
                 <b id="area-svar"></b>
             </div>
         </div>
     </fieldset>
-    <fieldset>
+    <button class="accordion">Volym</button>
+    <fieldset class="panel">
         <legend>Volym mått</legend>
         <div class="grid-container">
             <div class="Enhet1">
@@ -127,11 +130,11 @@
                     <option>Kilometer</option>
                 </select>
             </div>
-            <div class="Convert-button">
-                <button type="submit" onclick="SubmitVolume()">Konvertera</button>
-            </div>
             <div class="Input">
                 <input id="volume-input" placeholder="T.ex. 245">
+            </div>
+            <div class="Convert-button">
+                <button type="submit" onclick="SubmitVolume()">Konvertera</button>
             </div>
             <div class="Result">
                 <b id="volume-svar"></b>

@@ -92,8 +92,7 @@ fieldset {
   width: 30vw;
 
   text-align: center;
-  margin: auto;
-  margin-top: 20vh;
+  margin: 20vh auto;
 }
 fieldset div select {
   border-style: none;
