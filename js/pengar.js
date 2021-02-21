@@ -9,7 +9,7 @@ function SubmitValuta() {
     enhet2 = document.querySelector("#valuta2");
     console.log(enhet2);
     input = document.querySelector("#valuta-input").value;
-    document.getElementById('valuta-svar').innerText = CalculateResult(1);
+    document.getElementById('valuta-svar').innerText = CalculateResult(1) + " " + enhet2.value;
     console.log("hej");
     console.log(CalculateResult(1));
 }

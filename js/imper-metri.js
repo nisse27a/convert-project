@@ -8,7 +8,7 @@ function SubmitImper() {
     enhet1 = document.querySelector("#imper-enhet1");
     enhet2 = document.querySelector("#imper-enhet2");
     input = document.querySelector("#imper-input").value;
-    document.getElementById('imper-svar').innerText = CalculateResult(1);
+    document.getElementById('imper-svar').innerText = CalculateResult(1) + " " + enhet2.value;
 }
 
 function Enhet(enhet) {

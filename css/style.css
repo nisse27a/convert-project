@@ -99,3 +99,19 @@ fieldset div select {
   border-bottom-style: solid;
   border-width: 3px;
 }
+
+fieldset legend {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.accordion {
+  padding: 5vh;
+  width: 100%;
+  outline: none;
+  transition: 400ms;
+}
+
+.panel {
+  display: none;
+}

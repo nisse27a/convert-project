@@ -8,21 +8,21 @@ function SubmitLength() {
     enhet1 = document.querySelector("#length-enhet1");
     enhet2 = document.querySelector("#length-enhet2");
     input = document.querySelector("#length-input").value;
-    document.getElementById('length-svar').innerText = CalculateResult(1);
+    document.getElementById('length-svar').innerText = CalculateResult(1) + " " + enhet2.value;
 }
 
 function SubmitArea() {
     enhet1 = document.querySelector("#area-enhet1");
     enhet2 = document.querySelector("#area-enhet2");
     input = document.querySelector("#area-input").value;
-    document.getElementById('area-svar').innerText = CalculateResult(2);
+    document.getElementById('area-svar').innerHTML = CalculateResult(2) + " " + enhet2.value + "<sup>2</sup>";
 }
 
 function SubmitVolume() {
     enhet1 = document.querySelector("#volume-enhet1");
     enhet2 = document.querySelector("#volume-enhet2");
     input = document.querySelector("#volume-input").value;
-    document.getElementById('volume-svar').innerText = CalculateResult(3);
+    document.getElementById('volume-svar').innerHTML = CalculateResult(3) + " " + enhet2.value + "<sup>3</sup>";
 }
 
 function Enhet(enhet) {

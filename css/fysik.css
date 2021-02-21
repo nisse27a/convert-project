@@ -6,14 +6,3 @@
   background-position: 0% 30%;
   display: grid;
 }
-
-.accordion {
-  padding: 5vh;
-  width: 100%;
-  outline: none;
-  transition: 400ms;
-}
-
-.panel {
-  display: none;
-}
