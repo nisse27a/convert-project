@@ -43,6 +43,13 @@ header nav ul li a:hover {
   color: var(--theme-color);
 }
 
+div + h1 {
+  text-align: center;
+  line-height: 2;
+  color: var(--color5);
+  background-color: var(--detail);
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
@@ -89,10 +96,10 @@ header nav ul li a:hover {
   grid-area: Result;
 }
 fieldset {
-  width: 30vw;
-
+  width: 35vw;
   text-align: center;
   margin: 20vh auto;
+  border-radius: 100px;
 }
 fieldset div select {
   border-style: none;
@@ -108,7 +115,6 @@ fieldset legend {
 .accordion {
   padding: 5vh;
   width: 100%;
-  outline: none;
   transition: 400ms;
 }
 
