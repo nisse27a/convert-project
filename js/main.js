@@ -1,5 +1,5 @@
 "use strict";
-
+document.getElementsByTagName("fieldset")[0].scrollIntoView({behavior: "smooth", block: "center", inline: "start"});
 function CalculateResult(exponent) {
     let decimaler;
     let koefficient1 = Enhet(enhet1);
