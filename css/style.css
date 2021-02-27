@@ -98,6 +98,16 @@ div + h1 {
   background-color: var(--detail);
 }
 
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 20vh;
+  padding: 4vh 4vw;
+  text-align: center;
+  color: var(--color3);
+  background-color: var(--detail);
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
