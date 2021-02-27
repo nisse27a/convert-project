@@ -101,7 +101,7 @@ div + h1 {
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 20vh;
+  height: 10vh;
   padding: 4vh 4vw;
   text-align: center;
   color: var(--color3);
