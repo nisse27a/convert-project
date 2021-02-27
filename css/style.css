@@ -157,7 +157,7 @@ fieldset {
   width: 35vw;
   text-align: center;
   margin: 20vh auto;
-  border-radius: 100px;
+  border-radius: 35px;
 }
 fieldset div select {
   border-style: none;
